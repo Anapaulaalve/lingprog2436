@@ -157,10 +157,10 @@ int numero;
 printf("digite um numero:");
 scanf("%d",&numero);
 if( numero > 20 &numero == 20 &numero < 20 ){
-	prinf("%d > 20\n",numero);}
-		printf("%d está entre maior ou igual a 20\n",numero);{
-		else
-		printf("d% meneor que 20\n",numero);
+	printf("%d > 20\n",numero);
+	printf("%d está entre maior ou igual a 20\n",numero);}
+		else{
+		printf("d% menor que 20\n",numero);
 		}
 	}
 	
@@ -170,7 +170,17 @@ if( numero > 20 &numero == 20 &numero < 20 ){
 //ano de nascimento informado é válido.
 void questao09() {
 	
-}
+	int ano_nascimento, ano_atual, idade_anos,
+
+    printf ("Informe o ano de seu nascimento:");
+	scanf("%d", &ano_nascimento);
+	  if (ano_atual - ano_nascimento){
+  printf("Informe o ano atual: ");{
+  scanf("%d", &ano_atual);
+  printf("\nA idade em anos é: %d", idade_anos);
+
+  }
+	  }
 
 //10. Faça um programa que leia três números inteiros e imprima os três em ordem
 //crescente.
@@ -298,7 +308,7 @@ void questao25() {
 	
 }
 
-int main() {
+   int main() {
 	const char menu[1000] = "\n================================\n            PROGRAMAS\n================================\n[1]  - Adição\n[2]  - Adição 2\n[3]  - Múltiplo\n[4]  - Múltiplo 2\n[5]  - Múltiplo 3\n[6]  - Crédito\n[7]  - Intervalo\n[8]  - Menor/Maior\n[9]  - Idade\n[10] - Crescente\n[11] - Maior\n[12] - Idade 2\n[13] - Situação Aluno\n[14] - INSS\n[15] - Valor de Venda\n[16] - Natação\n[17] - Plano de Saúde\n[18] - Mês do Ano\n[19] - Arco e Flecha\n[20] - Crédito Especial\n[21] - Biblioteca\n[22] - Consumo Combustível\n[23] - Calorias\n[24] - Emplacamento\n[25] - Intimação\n================================\n";
 	printf("%s",menu);
 	int opcao;
@@ -329,13 +339,17 @@ int main() {
 		case 8:
 			questao08();
 			break;	
+
+		case 9:
+			questao09();
+			break;	
+			
 		case 10:
 			questao10();
 			break;
 		default:
 			printf("Opção inválida!");
-	}
 	
-	return EXIT_SUCCESS;
-}
+	
+		
 
